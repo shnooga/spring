@@ -4,8 +4,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HelloWorld {
-    private String name = "Muttley";
+    private String name = "Missing_Name";
 
+    public HelloWorld() {}
+    public HelloWorld(String name) { this.name = name; }
     public void printHello() {
         System.out.println("Spring 3 : Hello ! " + name);
     }

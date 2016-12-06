@@ -1,9 +1,5 @@
 package com.shnooga;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
-
 public class HelloWorld {
     private String name;
 

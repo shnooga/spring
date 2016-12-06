@@ -8,8 +8,7 @@
 
     <context:annotation-config />
 
-    <bean id="myAppBean" class="com.shnooga.MyApp">
-    </bean>
+    <bean id="myAppBean" class="com.shnooga.MyApp"> </bean>
 
     <bean id="helloBean" class="com.shnooga.HelloWorld">
         <property name="name" value="Bobasaurus" />

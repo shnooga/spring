@@ -13,9 +13,8 @@ public class MyApp {
         return helloWorld;
     }
 
-    public void setHelloWorld(HelloWorld helloWorld) {
-        this.helloWorld = helloWorld;
-    }
+//    No need for setters with AutoWired
+//    public void setHelloWorld(HelloWorld helloWorld) { this.helloWorld = helloWorld;     }
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringBeans.xml");

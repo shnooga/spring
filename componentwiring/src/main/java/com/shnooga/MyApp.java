@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyApp {
 
+    // Use @Autowired to avoid defining setter/getter for helloWorld
     @Autowired
     private HelloWorld helloWorld; // Autowire do not need setters
 

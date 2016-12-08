@@ -6,20 +6,20 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyApp {
 
+    // Use @Autowired to avoid defining setter/getter for helloWorld
     @Autowired
     private HelloWorld helloWorld;
 
-    public HelloWorld getHelloWorld() {
-        return helloWorld;
-    }
-
-//    No need for setters with AutoWired
+//    No need for setters with @AutoWired
 //    public void setHelloWorld(HelloWorld helloWorld) { this.helloWorld = helloWorld;     }
+//    public HelloWorld getHelloWorld() { return helloWorld; }
+
+    private void run() {helloWorld.printHello();}
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("SpringBeans.xml");
         MyApp bean = (MyApp) context.getBean("myAppBean");
 
-        bean.getHelloWorld().printHello();
+        bean.run();
     }
 }

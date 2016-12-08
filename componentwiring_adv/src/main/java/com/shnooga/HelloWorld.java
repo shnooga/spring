@@ -2,6 +2,7 @@ package com.shnooga;
 
 import org.springframework.stereotype.Component;
 
+// Use @Component to avoid defining the bean in SpringBeans.xml
 @Component
 public class HelloWorld {
     private String name = "Missing_Name";

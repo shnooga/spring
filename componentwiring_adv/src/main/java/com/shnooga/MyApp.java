@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
+// Use @Configuration and @Bean to choose specific instantiator for a bean.
 @Configuration
+// Use @Component to avoid defining the bean in SpringBeans.xml
 @Component
 public class MyApp {
 

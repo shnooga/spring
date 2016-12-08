@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
+// Use @Component to avoid defining the bean in SpringBeans.xml
 @Component
 public class MyApp {
 

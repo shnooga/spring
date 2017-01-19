@@ -1,5 +1,6 @@
 package com.shnooga;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 // Use @Component to avoid defining the bean in SpringBeans.xml

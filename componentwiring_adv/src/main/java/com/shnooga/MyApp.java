@@ -6,10 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-// Use @Configuration and @Bean to choose specific instantiator for a bean.
-@Configuration
 // Use @ComponentScan to point to the class package of interest
 @ComponentScan(basePackages = {"com.shnooga"})
 public class MyApp {

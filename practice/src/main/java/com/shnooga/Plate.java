@@ -12,6 +12,6 @@ public class Plate {
     private BeanIntf bean;
 
     public void showContent() {
-        System.out.println(bean.getName() + " is " + bean.getName());
+        System.out.println(bean.getName() + " is " + bean.getBehavior());
     }
 }

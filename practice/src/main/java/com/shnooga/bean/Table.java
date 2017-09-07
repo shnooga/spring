@@ -1,19 +1,26 @@
 package com.shnooga.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component // Use @Component to signify Spring Bean
 public class Table {
     @Autowired
-    private Plate roundPlate; // matches Config's Bean name
+    private Fork myFork;      // matches @Component's name
 
     @Autowired
-    private Fork myFork;      // matches Component's name
+    private Utensil knife;    // matches @Config's Bean name
+    @Autowired
+    private Utensil spoon;    // matches @Config's Bean name
+    @Autowired
+    private Plate roundPlate; // matches @Config's Bean name
 
     public void showContent() {
-        System.out.print(getClass().getSimpleName() + " has a " + roundPlate.getShape() + " " + roundPlate.getClass().getSimpleName());
+        System.out.println(getClass().getSimpleName() + " has a " + roundPlate.getShape() + " " + roundPlate.getClass().getSimpleName());
         System.out.println(" with a " + myFork.getBehavior() + " " + myFork.getClass().getSimpleName());
+        System.out.println(" with a " + knife.getBehavior() + " " + knife.getName());
+        System.out.println(" with a " + spoon.getBehavior() + " " + spoon.getName());
         roundPlate.showContent();
     }
 }

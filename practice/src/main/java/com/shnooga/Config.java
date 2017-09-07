@@ -1,9 +1,6 @@
 package com.shnooga;
 
-import com.shnooga.bean.BeanIntf;
-import com.shnooga.bean.ChiliBean;
-import com.shnooga.bean.JellyBean;
-import com.shnooga.bean.Plate;
+import com.shnooga.bean.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -23,4 +20,10 @@ public class Config {
 
     @Bean(name="roundPlate")
     public Plate createRoundPlate() {return new Plate("round");}
+
+    @Bean(name="knife")
+    public Utensil createKnife() {return new Utensil("knife", "sharp");}
+
+    @Bean(name="spoon")
+    public Utensil createSpoon() {return new Utensil("spoon", "old");}
 }

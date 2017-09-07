@@ -4,19 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-// Use @Component to signify Spring Bean
-@Component
+@Component // Use @Component to signify Spring Bean
 public class Plate {
     private String shape;
 
-    // Specify which bean to create with qualifier
     @Autowired
-    @Qualifier(value = "chiliBean")
+    @Qualifier(value = "chiliBean") // Specify which bean to create with @Qualifier
     private BeanIntf bean;
 
-    // Simplified bean creation by using bean name as property name.
     @Autowired
-    private BeanIntf jellyBean;
+    private BeanIntf jellyBean;     // Simplified bean creation by matching @Config's Bean name
 
     public Plate() {} // Spring needs a default constructor
     public Plate(String shape) { this.shape = shape; }
@@ -24,8 +21,8 @@ public class Plate {
     public String getShape() { return shape; }
 
     public void showContent() {
-        System.out.println(" " + shape + " plate has :");
-        System.out.println("   " + jellyBean.getBehavior() + " " + jellyBean.getName());
-        System.out.println("   " + bean.getBehavior() + " " + bean.getName());
+        System.out.println("  " + shape + " plate has :");
+        System.out.println("    " + jellyBean.getBehavior() + " " + jellyBean.getName());
+        System.out.println("    " + bean.getBehavior() + " " + bean.getName());
     }
 }

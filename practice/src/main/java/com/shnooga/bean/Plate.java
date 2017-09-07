@@ -1,4 +1,4 @@
-package com.shnooga;
+package com.shnooga.bean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -19,7 +19,6 @@ public class Plate {
     private BeanIntf jellyBean;
 
     public Plate() {} // Spring needs a default constructor
-
     public Plate(String shape) { this.shape = shape; }
 
     public String getShape() { return shape; }

@@ -1,4 +1,4 @@
-package com.shnooga;
+package com.shnooga.bean;
 
 import org.springframework.stereotype.Component;
 

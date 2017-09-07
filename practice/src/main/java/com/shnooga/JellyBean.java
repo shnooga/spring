@@ -2,7 +2,7 @@ package com.shnooga;
 
 public class JellyBean implements  BeanIntf {
     public String getBehavior() {
-        return "Sweet";
+        return "sweet";
     }
 
     public String getName() {

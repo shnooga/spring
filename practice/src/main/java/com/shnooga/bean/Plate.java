@@ -24,7 +24,8 @@ public class Plate {
     public String getShape() { return shape; }
 
     public void showContent() {
-        System.out.println(shape + " plate has " + jellyBean.getBehavior() + " " + jellyBean.getName());
-        System.out.println(shape + " plate has " + bean.getBehavior() + " " + bean.getName());
+        System.out.println(" " + shape + " plate has :");
+        System.out.println("   " + jellyBean.getBehavior() + " " + jellyBean.getName());
+        System.out.println("   " + bean.getBehavior() + " " + bean.getName());
     }
 }

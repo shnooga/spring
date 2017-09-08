@@ -29,4 +29,8 @@ public class Config {
 
     @Bean(name="spoon")
     public Utensil createSpoon() {return new Utensil("spoon", "old");}
+
+    //Note:
+    // Don't need to put Fork here as long as all @Autowire name the
+    // variable, "myFork" due to its explicit declaration of @Component("myForK)
 }

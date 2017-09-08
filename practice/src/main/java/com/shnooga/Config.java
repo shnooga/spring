@@ -8,6 +8,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+
+/**
+ * Use this class to set properties of Spring beans of interest.
+ * No need to declare Spring Bean here otherwise, see Fork.java
+ */
 @Configuration
 @ComponentScan(basePackages = {"com.shnooga"})
 public class Config {

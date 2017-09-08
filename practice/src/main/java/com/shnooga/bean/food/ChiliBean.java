@@ -1,4 +1,4 @@
-package com.shnooga.bean;
+package com.shnooga.bean.food;
 
 public class ChiliBean implements  BeanIntf {
     public String getBehavior() { return "spicy"; }

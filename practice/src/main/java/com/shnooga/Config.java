@@ -1,6 +1,9 @@
 package com.shnooga;
 
 import com.shnooga.bean.*;
+import com.shnooga.bean.food.BeanIntf;
+import com.shnooga.bean.food.ChiliBean;
+import com.shnooga.bean.food.JellyBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

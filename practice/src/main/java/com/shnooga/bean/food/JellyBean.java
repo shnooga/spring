@@ -1,4 +1,4 @@
-package com.shnooga.bean;
+package com.shnooga.bean.food;
 
 public class JellyBean implements  BeanIntf {
     public String getBehavior() { return "sweet"; }

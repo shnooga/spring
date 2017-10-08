@@ -10,6 +10,11 @@ public class Table {
     private Fork myFork;      // matches @Component's name
 
     @Autowired
+    private Napkin whiteNapkin;
+    @Autowired
+    private Napkin blackNapkin;
+
+    @Autowired
     private Utensil knife;    // matches @Config's Bean name
     @Autowired
     private Utensil spoon;    // matches @Config's Bean name
@@ -21,6 +26,9 @@ public class Table {
         System.out.println(" with a " + myFork.getBehavior() + " " + myFork.getClass().getSimpleName());
         System.out.println(" with a " + knife.getBehavior() + " " + knife.getName());
         System.out.println(" with a " + spoon.getBehavior() + " " + spoon.getName());
+        whiteNapkin.setColor("white");
+        System.out.println(" with a " + whiteNapkin.getColor() + " " + whiteNapkin.getClass().getSimpleName());
+        System.out.println(" with a " + blackNapkin.getColor() + " " + blackNapkin.getClass().getSimpleName());
         roundPlate.showContent();
     }
 }

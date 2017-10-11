@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Use this class to set properties of Spring beans of interest.
- * No need to declare Spring Bean here otherwise, see Fork.java
+ * Either declare Spring Bean here with @Bean or at the class with @Component; see Napkin.java
  */
 @Configuration
 @ComponentScan(basePackages = {"com.shnooga"})
@@ -36,6 +36,5 @@ public class Config {
     public Utensil createSpoon() {return new Utensil("spoon", "old");}
 
     //Note:
-    // Don't need to put Fork here as long as all @Autowire name the
-    // variable, "myFork" due to its explicit declaration of @Component("myForK)
+    // Don't need to put Fork, Napkin here due to declaration of @Component of Fork.java & Napkin.java
 }

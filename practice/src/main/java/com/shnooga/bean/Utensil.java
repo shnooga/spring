@@ -1,8 +1,6 @@
 package com.shnooga.bean;
 
-import org.springframework.stereotype.Component;
-
-@Component // Use @Component to signify Spring Bean
+// @Component not needed because already declared in Config.java
 public class Utensil {
     private String behavior;
     private String name;

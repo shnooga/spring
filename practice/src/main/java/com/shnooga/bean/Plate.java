@@ -10,8 +10,12 @@ public class Plate {
     private String shape;
 
     @Autowired
-    @Qualifier(value = "chiliBean") // Specify which bean to create with @Qualifier
+    @Qualifier(value = "chiliBean") // Specify which bean to create with @Qualifier; checks with config.java
     private BeanIntf bean;
+
+    @Autowired
+    @Qualifier(value = "purpleBean") // Specify which bean to create with @Qualifier; checks with StringBean.java
+    private BeanIntf beanX;
 
     @Autowired
     private BeanIntf jellyBean;     // Simplified bean creation by matching @Config's Bean name
@@ -25,5 +29,6 @@ public class Plate {
         System.out.println("  " + shape + " plate has :");
         System.out.println("    " + jellyBean.getBehavior() + " " + jellyBean.getName());
         System.out.println("    " + bean.getBehavior() + " " + bean.getName());
+        System.out.println("    " + beanX.getBehavior() + " " + beanX.getName());
     }
 }
